@@ -1,0 +1,40 @@
+#端口
+server:
+  port: 1414
+
+# spring基本配置
+spring:
+  application:
+    name: hospitak-filing
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pigeonhole_hospital?serverTimezone=UTC&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: cn.signit.hospital.dao
+  mapper-locations: classpath:mapping/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  check-config-location: true
+
+# spring安全配置
+security:
+  user:
+    name: user
+    password: password
+
+# spring cloud
+# eureka配置
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+    # 指定此实例的ip TODO 动态获取ip
+    instance-id: 192.168.1.192:${server.port}
+  client:
+    service-url:
+      defaultZone: http://${security.user.name}:${security.user.password}@mss-eureka01.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka02.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka03.ns.me:5683/eureka/

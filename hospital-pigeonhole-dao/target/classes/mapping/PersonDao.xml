@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.signit.hospital.dao.PersonDao">
+  <resultMap id="BaseResultMap" type="cn.signit.hospital.po.Person">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="first" jdbcType="VARCHAR" property="first" />
+    <result column="last" jdbcType="VARCHAR" property="last" />
+    <result column="dateofbirth" jdbcType="DATE" property="dateofbirth" />
+    <result column="placeofbirth" jdbcType="VARCHAR" property="placeofbirth" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, `first`, `last`, dateofbirth, placeofbirth
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from person
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from person
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="cn.signit.hospital.po.Person" useGeneratedKeys="true">
+    insert into person (`first`, `last`, dateofbirth, 
+      placeofbirth)
+    values (#{first,jdbcType=VARCHAR}, #{last,jdbcType=VARCHAR}, #{dateofbirth,jdbcType=DATE}, 
+      #{placeofbirth,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="cn.signit.hospital.po.Person" useGeneratedKeys="true">
+    insert into person
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="first != null">
+        `first`,
+      </if>
+      <if test="last != null">
+        `last`,
+      </if>
+      <if test="dateofbirth != null">
+        dateofbirth,
+      </if>
+      <if test="placeofbirth != null">
+        placeofbirth,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="first != null">
+        #{first,jdbcType=VARCHAR},
+      </if>
+      <if test="last != null">
+        #{last,jdbcType=VARCHAR},
+      </if>
+      <if test="dateofbirth != null">
+        #{dateofbirth,jdbcType=DATE},
+      </if>
+      <if test="placeofbirth != null">
+        #{placeofbirth,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.signit.hospital.po.Person">
+    update person
+    <set>
+      <if test="first != null">
+        `first` = #{first,jdbcType=VARCHAR},
+      </if>
+      <if test="last != null">
+        `last` = #{last,jdbcType=VARCHAR},
+      </if>
+      <if test="dateofbirth != null">
+        dateofbirth = #{dateofbirth,jdbcType=DATE},
+      </if>
+      <if test="placeofbirth != null">
+        placeofbirth = #{placeofbirth,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.signit.hospital.po.Person">
+    update person
+    set `first` = #{first,jdbcType=VARCHAR},
+      `last` = #{last,jdbcType=VARCHAR},
+      dateofbirth = #{dateofbirth,jdbcType=DATE},
+      placeofbirth = #{placeofbirth,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
