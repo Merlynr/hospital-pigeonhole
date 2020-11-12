@@ -22,6 +22,7 @@
         <module>hospital-pigeonhole-dao</module>
         <module>hospital-pigeonhole-pojo</module>
         <module>hospital-pigeonhole-service</module>
+        <module>hospital-pigeonhole-common</module>
     </modules>
 
     <dependencyManagement>

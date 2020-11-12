@@ -10,6 +10,7 @@
         <module name="hospital-pigeonhole-pojo" />
         <module name="hospital-pigeonhole-service" />
         <module name="hospital-pigeonhole-dao" />
+        <module name="hospital-pigeonhole-common" />
         <module name="hospital-pigeonhole-app" />
       </profile>
     </annotationProcessing>
