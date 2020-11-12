@@ -14,8 +14,8 @@ spring:
     password: 123456
 
 mybatis:
-  type-aliases-package: cn.signit.hospital.dao
-  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: cn.signit.hospital.po,cn.signit.hospital.dto,cn.signit.hospital.vo
+  mapper-locations: classpath:cn/signit/hospital/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
   check-config-location: true

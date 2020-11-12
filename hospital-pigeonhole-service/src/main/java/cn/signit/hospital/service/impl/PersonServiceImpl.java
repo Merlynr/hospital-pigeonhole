@@ -23,11 +23,10 @@ public class PersonServiceImpl implements PersonService {
     private final Logger logger= Logger.getLogger(getClass());
 
 
-    @Autowired
-    private PersonDao personDao;
+//    TODO 配置完成依旧显示未注入的问题
 
     @Autowired
-    private Person person;
+    private PersonDao personDao;
 
     /**
      * 通过id获取一个
@@ -37,6 +36,12 @@ public class PersonServiceImpl implements PersonService {
      */
     public Person getOneById(int id) {
         logger.info(id);
+        logger.info(personDao.selectByPrimaryKey(id));
         return personDao.selectByPrimaryKey(id);
+    }
+
+    public void deleteById(int id) {
+        logger.info("删除删除");
+        personDao.deleteByPrimaryKey(id);
     }
 }

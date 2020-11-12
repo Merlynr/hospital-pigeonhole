@@ -45,4 +45,9 @@ public class HelloWorldController {
 
         return personService.getOneById(id);
     }
+
+    @GetMapping("delete/{id}")
+    public void deletePersonById(@PathVariable("id") int id){
+        personService.deleteById(id);
+    }
 }

@@ -16,4 +16,6 @@ import cn.signit.hospital.po.Person;
 public interface PersonService {
 
     Person getOneById(int id);
+
+    void deleteById(int id);
 }

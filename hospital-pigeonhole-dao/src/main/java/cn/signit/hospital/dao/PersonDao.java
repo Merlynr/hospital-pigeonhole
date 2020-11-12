@@ -1,8 +1,7 @@
 package cn.signit.hospital.dao;
 
-import cn.signit.hospital.po.*;
+import cn.signit.hospital.po.Person;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 /**
  * 人刀
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Repository;
  * @date 2020/11/11
  */
 @Mapper
-@Repository
 public interface PersonDao {
     int deleteByPrimaryKey(Integer id);
 

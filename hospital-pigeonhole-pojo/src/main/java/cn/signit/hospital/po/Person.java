@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
  * @date 2020/11/11
  */
 @Data
-@Repository
 public class Person implements Serializable {
     private Integer id;
 
