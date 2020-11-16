@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * 人服务impl
  *
@@ -25,7 +27,7 @@ public class PersonServiceImpl implements PersonService {
 
 //    TODO 配置完成依旧显示未注入的问题
 
-    @Autowired
+    @Resource
     private PersonDao personDao;
 
     /**

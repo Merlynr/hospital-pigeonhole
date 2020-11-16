@@ -2,6 +2,7 @@ package cn.signit.hospitalpigeonholeapp.controller;
 
 import cn.signit.hospital.po.Person;
 import cn.signit.hospital.service.PersonService;
+import cn.signit.hospital.utils.LogUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,11 +32,12 @@ public class HelloWorldController {
      */
     @GetMapping("/hello")
     public String hello(){
+        LogUtil.info(this.getClass(),"HHHHHHHH");
         return "Hello ";
     }
 
     /**
-     * 通过id获取钞票
+     * 通过id获取钞票p
      *
      * @param id id
      * @return {@link Person}

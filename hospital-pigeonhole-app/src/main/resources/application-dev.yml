@@ -38,3 +38,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://${security.user.name}:${security.user.password}@mss-eureka01.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka02.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka03.ns.me:5683/eureka/
+
+#日志管理
+logging:
+  ##指定logback配置路径, 可放置classpath下
+  config: classpath:logback-spring.xml
+  #日志保存路径
+  path: ./hospital-pigeonhole-app/src/main/resources/WebAppLogs

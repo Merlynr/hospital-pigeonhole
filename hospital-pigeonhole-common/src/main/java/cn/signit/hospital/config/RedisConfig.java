@@ -19,13 +19,13 @@ import redis.clients.jedis.JedisPoolConfig;
 public class RedisConfig {
     private Logger log = LoggerFactory.getLogger(RedisConfig.class);
 
-    @Value("${redis.server.host}")
+    @Value("${redis.server.host:#{'127.0.0.1' }}")
     private String host;
 
-    @Value("${redis.server.port}")
+    @Value("${redis.server.port:#{6379}}")
     private int port;
 
-    @Value("${redis.server.password}")
+    @Value("${redis.server.password:#{123456}}")
     private String password;
 
 

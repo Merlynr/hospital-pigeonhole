@@ -1,0 +1,7 @@
+[19:00:01:790] - [restartedMain] [WARN] - o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'propertySourcesPlaceholderConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[19:00:05:852] - [restartedMain] [WARN] - c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[19:00:05:856] - [restartedMain] [WARN] - c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[19:00:45:828] - [restartedMain] [WARN] - o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'propertySourcesPlaceholderConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[19:00:49:723] - [restartedMain] [WARN] - c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[19:00:49:727] - [restartedMain] [WARN] - c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[19:00:51:462] - [restartedMain] [WARN] - c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1605524451462, current=DOWN, previous=UP]
