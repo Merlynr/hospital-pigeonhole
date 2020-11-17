@@ -30,7 +30,7 @@ public class HelloWorldController {
      *
      * @return {@link String}
      */
-    @GetMapping("/hello")
+    @GetMapping("/api/hello")
     public String hello(){
         LogUtil.info(this.getClass(),"HHHHHHHH");
         return "Hello ";
@@ -44,7 +44,7 @@ public class HelloWorldController {
      */
     @GetMapping("/person/{id}")
     public Person getOneyById(@PathVariable("id") int id){
-
+        LogUtil.info(this.getClass(),"用户ID:"+id);
         return personService.getOneById(id);
     }
 

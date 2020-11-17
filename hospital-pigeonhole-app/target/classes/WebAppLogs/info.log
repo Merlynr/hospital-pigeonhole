@@ -1,156 +1,99 @@
-[19:00:00:385] - [restartedMain] [INFO] - c.s.h.HospitalPigeonholeAppApplication - The following profiles are active: dev
-[19:00:00:411] - [restartedMain] [INFO] - o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e8f5f83: startup date [Mon Nov 16 19:00:00 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@38cc9f1
-[19:00:01:630] - [restartedMain] [INFO] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[19:00:01:885] - [restartedMain] [INFO] - o.s.cloud.context.scope.GenericScope - BeanFactory id=0a53217a-80fc-3234-85b8-6a90ce23d30d
-[19:00:01:895] - [restartedMain] [INFO] - o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[19:00:01:998] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e408e09c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[19:00:02:017] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$22e399] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[19:00:02:334] - [restartedMain] [INFO] - o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1414 (http)
-[19:00:02:342] - [restartedMain] [INFO] - o.a.catalina.core.StandardService - Starting service Tomcat
-[19:00:02:343] - [restartedMain] [INFO] - o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
-[19:00:02:451] - [localhost-startStop-1] [INFO] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[19:00:02:452] - [localhost-startStop-1] [INFO] - o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2041 ms
-[19:00:02:585] - [localhost-startStop-1] [INFO] - o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-[19:00:02:589] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[19:00:02:589] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[19:00:02:589] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[19:00:02:589] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[19:00:02:957] - [restartedMain] [INFO] - c.signit.hospital.config.RedisConfig - init JredisPool ...
-[19:00:04:886] - [restartedMain] [INFO] - o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
-[19:00:05:191] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e8f5f83: startup date [Mon Nov 16 19:00:00 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@38cc9f1
-[19:00:05:246] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete/{id}],methods=[GET]}" onto public void cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.deletePersonById(int)
-[19:00:05:246] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/{id}],methods=[GET]}" onto public cn.signit.hospital.po.Person cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.getOneyById(int)
-[19:00:05:247] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.hello()
-[19:00:05:247] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.TestRedis.helloWorld(java.lang.String)
-[19:00:05:249] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[19:00:05:250] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[19:00:05:285] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:05:285] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:05:317] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:05:763] - [restartedMain] [INFO] - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[19:00:05:853] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[19:00:05:856] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[19:00:05:934] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[19:00:05:943] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
-[19:00:05:945] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-[19:00:05:945] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
-[19:00:05:947] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-[19:00:05:956] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-[19:00:05:965] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2e8f5f83,type=ConfigurationPropertiesRebinder]
-[19:00:06:120] - [restartedMain] [INFO] - o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
-[19:00:06:125] - [restartedMain] [INFO] - o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-[19:00:06:159] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-[19:00:06:259] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
-[19:00:06:259] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
-[19:00:06:330] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
-[19:00:06:330] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
-[19:00:06:468] - [restartedMain] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-[19:00:07:022] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Disable delta property : false
-[19:00:07:022] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-[19:00:07:022] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-[19:00:07:023] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application is null : false
-[19:00:07:023] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-[19:00:07:023] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application version is -1: true
-[19:00:07:023] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-[19:00:07:223] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - The response status is 200
-[19:00:07:225] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-[19:00:07:227] - [restartedMain] [INFO] - c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-[19:00:07:230] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1605524407230 with initial instances count: 24
-[19:00:07:244] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaServiceRegistry - Registering application hospitak-filing with eureka with status UP
-[19:00:07:244] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1605524407244, current=UP, previous=STARTING]
-[19:00:07:246] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414: registering service...
-[19:00:07:255] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1414"]
-[19:00:07:264] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1414"]
-[19:00:07:272] - [restartedMain] [INFO] - o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-[19:00:07:275] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414 - registration status: 204
-[19:00:07:288] - [restartedMain] [INFO] - o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 1414 (http)
-[19:00:07:288] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1414
-[19:00:07:292] - [restartedMain] [INFO] - c.s.h.HospitalPigeonholeAppApplication - Started HospitalPigeonholeAppApplication in 11.587 seconds (JVM running for 13.149)
-[19:00:12:297] - [http-nio-1414-exec-1] [INFO] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[19:00:12:298] - [http-nio-1414-exec-1] [INFO] - o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[19:00:12:317] - [http-nio-1414-exec-1] [INFO] - o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
-[19:00:12:335] - [http-nio-1414-exec-1] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
-[19:00:32:432] - [http-nio-1414-exec-3] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
-[19:00:44:564] - [restartedMain] [INFO] - c.s.h.HospitalPigeonholeAppApplication - The following profiles are active: dev
-[19:00:44:579] - [restartedMain] [INFO] - o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4644dd14: startup date [Mon Nov 16 19:00:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7613124c
-[19:00:45:683] - [restartedMain] [INFO] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[19:00:45:910] - [restartedMain] [INFO] - o.s.cloud.context.scope.GenericScope - BeanFactory id=0a53217a-80fc-3234-85b8-6a90ce23d30d
-[19:00:45:919] - [restartedMain] [INFO] - o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[19:00:46:011] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$519cbd30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[19:00:46:031] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6db6c02d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[19:00:46:309] - [restartedMain] [INFO] - o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1414 (http)
-[19:00:46:316] - [restartedMain] [INFO] - o.a.catalina.core.StandardService - Starting service Tomcat
-[19:00:46:317] - [restartedMain] [INFO] - o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
-[19:00:46:419] - [localhost-startStop-1] [INFO] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[19:00:46:421] - [localhost-startStop-1] [INFO] - o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1842 ms
-[19:00:46:557] - [localhost-startStop-1] [INFO] - o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-[19:00:46:560] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[19:00:46:560] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[19:00:46:560] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[19:00:46:561] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[19:00:46:912] - [restartedMain] [INFO] - c.signit.hospital.config.RedisConfig - init JredisPool ...
-[19:00:48:813] - [restartedMain] [INFO] - o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
-[19:00:49:104] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4644dd14: startup date [Mon Nov 16 19:00:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7613124c
-[19:00:49:150] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.hello()
-[19:00:49:151] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete/{id}],methods=[GET]}" onto public void cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.deletePersonById(int)
-[19:00:49:151] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/{id}],methods=[GET]}" onto public cn.signit.hospital.po.Person cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.getOneyById(int)
-[19:00:49:153] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.TestRedis.helloWorld(java.lang.String)
-[19:00:49:153] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[19:00:49:153] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[19:00:49:184] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:49:184] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:49:216] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[19:00:49:635] - [restartedMain] [INFO] - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[19:00:49:723] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[19:00:49:727] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[19:00:49:819] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[19:00:49:827] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
-[19:00:49:829] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-[19:00:49:829] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
-[19:00:49:831] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-[19:00:49:842] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-[19:00:49:856] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4644dd14,type=ConfigurationPropertiesRebinder]
-[19:00:50:032] - [restartedMain] [INFO] - o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
-[19:00:50:036] - [restartedMain] [INFO] - o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-[19:00:50:078] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-[19:00:50:184] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
-[19:00:50:184] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
-[19:00:50:264] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
-[19:00:50:264] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
-[19:00:50:452] - [restartedMain] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Disable delta property : false
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application is null : false
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-[19:00:51:208] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application version is -1: true
-[19:00:51:209] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-[19:00:51:377] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - The response status is 200
-[19:00:51:379] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-[19:00:51:381] - [restartedMain] [INFO] - c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-[19:00:51:383] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1605524451382 with initial instances count: 25
-[19:00:51:396] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaServiceRegistry - Registering application hospitak-filing with eureka with status UP
-[19:00:51:396] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1605524451396, current=UP, previous=STARTING]
-[19:00:51:398] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414: registering service...
-[19:00:51:408] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1414"]
-[19:00:51:417] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1414"]
-[19:00:51:429] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414 - registration status: 204
-[19:00:51:435] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-1414"]
-[19:00:51:435] - [restartedMain] [INFO] - o.a.catalina.core.StandardService - Stopping service Tomcat
-[19:00:51:452] - [restartedMain] [INFO] - o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
-[19:00:51:452] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-1414"]
-[19:00:51:452] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-1414"]
-[19:00:51:455] - [restartedMain] [INFO] - o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-[19:00:51:462] - [restartedMain] [INFO] - o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4644dd14: startup date [Mon Nov 16 19:00:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7613124c
-[19:00:51:462] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application hospitak-filing with eureka with status DOWN
-[19:00:51:463] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414: registering service...
-[19:00:51:463] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-[19:00:51:463] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Unregistering ...
-[19:00:51:490] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414 - registration status: 204
-[19:00:51:491] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414 - deregister  status: 200
-[19:00:51:496] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-[19:00:51:497] - [restartedMain] [INFO] - o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
-[19:00:51:500] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[19:00:51:500] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[21:04:15:139] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:09:15:145] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:09:28:641] - [http-nio-1414-exec-8] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:09:43:969] - [http-nio-1414-exec-9] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:09:54:680] - [http-nio-1414-exec-10] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:10:19:064] - [http-nio-1414-exec-1] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:10:32:540] - [http-nio-1414-exec-2] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:10:38:876] - [http-nio-1414-exec-4] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:10:45:367] - [http-nio-1414-exec-5] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:10:52:534] - [http-nio-1414-exec-6] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:14:15:146] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:19:15:147] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:23:46:035] - [http-nio-1414-exec-9] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:24:15:150] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:26:44:275] - [http-nio-1414-exec-1] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:26:49:936] - [http-nio-1414-exec-2] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:27:49:703] - [restartedMain] [INFO] - c.s.h.HospitalPigeonholeAppApplication - The following profiles are active: dev
+[21:27:49:719] - [restartedMain] [INFO] - o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60ed8656: startup date [Mon Nov 16 21:27:49 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@38cc9f1
+[21:27:50:811] - [restartedMain] [INFO] - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[21:27:51:052] - [restartedMain] [INFO] - o.s.cloud.context.scope.GenericScope - BeanFactory id=e41fba9f-7e72-365a-8417-dc041e767fdd
+[21:27:51:061] - [restartedMain] [INFO] - o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[21:27:51:150] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31410a23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[21:27:51:170] - [restartedMain] [INFO] - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4d5b0d20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[21:27:51:454] - [restartedMain] [INFO] - o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1414 (http)
+[21:27:51:461] - [restartedMain] [INFO] - o.a.catalina.core.StandardService - Starting service Tomcat
+[21:27:51:463] - [restartedMain] [INFO] - o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[21:27:51:569] - [localhost-startStop-1] [INFO] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[21:27:51:571] - [localhost-startStop-1] [INFO] - o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1852 ms
+[21:27:51:700] - [localhost-startStop-1] [INFO] - o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[21:27:51:703] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[21:27:51:704] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[21:27:51:704] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[21:27:51:704] - [localhost-startStop-1] [INFO] - o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[21:27:52:053] - [restartedMain] [INFO] - c.signit.hospital.config.RedisConfig - init JredisPool ...
+[21:27:53:908] - [restartedMain] [INFO] - o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+[21:27:54:220] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60ed8656: startup date [Mon Nov 16 21:27:49 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@38cc9f1
+[21:27:54:271] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/hello],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.hello()
+[21:27:54:273] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/{id}],methods=[GET]}" onto public cn.signit.hospital.po.Person cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.getOneyById(int)
+[21:27:54:273] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete/{id}],methods=[GET]}" onto public void cn.signit.hospitalpigeonholeapp.controller.HelloWorldController.deletePersonById(int)
+[21:27:54:273] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis],methods=[GET]}" onto public java.lang.String cn.signit.hospitalpigeonholeapp.controller.TestRedis.helloWorld(java.lang.String)
+[21:27:54:275] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[21:27:54:275] - [restartedMain] [INFO] - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[21:27:54:304] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[21:27:54:305] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[21:27:54:339] - [restartedMain] [INFO] - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[21:27:54:775] - [restartedMain] [INFO] - o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[21:27:54:865] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[21:27:54:868] - [restartedMain] [INFO] - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[21:27:54:955] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[21:27:54:961] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+[21:27:54:962] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[21:27:54:963] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+[21:27:54:964] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[21:27:54:974] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[21:27:54:984] - [restartedMain] [INFO] - o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=60ed8656,type=ConfigurationPropertiesRebinder]
+[21:27:55:163] - [restartedMain] [INFO] - o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+[21:27:55:168] - [restartedMain] [INFO] - o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[21:27:55:203] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[21:27:55:300] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[21:27:55:300] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[21:27:55:372] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[21:27:55:372] - [restartedMain] [INFO] - c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[21:27:55:512] - [restartedMain] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:27:56:052] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Disable delta property : false
+[21:27:56:052] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[21:27:56:052] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[21:27:56:052] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application is null : false
+[21:27:56:053] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[21:27:56:053] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Application version is -1: true
+[21:27:56:053] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[21:27:56:236] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - The response status is 200
+[21:27:56:238] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[21:27:56:240] - [restartedMain] [INFO] - c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[21:27:56:242] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1605533276242 with initial instances count: 26
+[21:27:56:256] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaServiceRegistry - Registering application hospitak-filing with eureka with status UP
+[21:27:56:256] - [restartedMain] [INFO] - c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1605533276256, current=UP, previous=STARTING]
+[21:27:56:258] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414: registering service...
+[21:27:56:269] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1414"]
+[21:27:56:278] - [restartedMain] [INFO] - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1414"]
+[21:27:56:288] - [restartedMain] [INFO] - o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[21:27:56:296] - [DiscoveryClient-InstanceInfoReplicator-0] [INFO] - c.netflix.discovery.DiscoveryClient - DiscoveryClient_HOSPITAK-FILING/192.168.1.192:1414 - registration status: 204
+[21:27:56:302] - [restartedMain] [INFO] - o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 1414 (http)
+[21:27:56:302] - [restartedMain] [INFO] - o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1414
+[21:27:56:305] - [restartedMain] [INFO] - c.s.h.HospitalPigeonholeAppApplication - Started HospitalPigeonholeAppApplication in 11.345 seconds (JVM running for 12.946)
+[21:28:02:180] - [http-nio-1414-exec-1] [INFO] - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[21:28:02:181] - [http-nio-1414-exec-1] [INFO] - o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[21:28:02:204] - [http-nio-1414-exec-1] [INFO] - o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+[21:28:35:178] - [http-nio-1414-exec-6] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:29:46:071] - [http-nio-1414-exec-9] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:30:16:671] - [http-nio-1414-exec-1] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:32:56:055] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:37:56:058] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:40:56:557] - [http-nio-1414-exec-5] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:42:56:060] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[21:45:06:135] - [http-nio-1414-exec-7] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:45:34:162] - [http-nio-1414-exec-8] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:45:36:951] - [http-nio-1414-exec-9] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:45:47:838] - [http-nio-1414-exec-10] [INFO] - c.s.h.c.HelloWorldController - HHHHHHHH
+[21:47:56:061] - [AsyncResolver-bootstrap-executor-0] [INFO] - c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

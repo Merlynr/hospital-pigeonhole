@@ -45,3 +45,5 @@ logging:
   config: classpath:logback-spring.xml
   #日志保存路径
   path: ./hospital-pigeonhole-app/src/main/resources/WebAppLogs
+
+#CORS代理设置
